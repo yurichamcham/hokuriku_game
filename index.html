@@ -1,0 +1,14 @@
+<script type = module>
+import { bg, show } from "https://js.sabae.cc/egadv.js";
+await bg(156);
+await show("ここは北陸のどこかです");
+for (; ;) {
+const a = await show("ここはどこでしょう?",["福井","石川","富山"]);
+if (a == "石川") {
+  await show("正解、兼六園です");
+  break;
+} else  {
+  await show("違います");
+}
+}
+</script>
